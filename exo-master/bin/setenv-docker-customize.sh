@@ -84,7 +84,7 @@ case "${EXO_DB_TYPE}" in
   mysql)
     [ -z "${EXO_DB_NAME}" ] && EXO_DB_NAME="exo"
     [ -z "${EXO_DB_USER}" ] && EXO_DB_USER="exo"
-    [ -z "${EXO_DB_PASSWORD}" ] && { echo "ERROR: you must provide a database password with EXO_DB_PASSWORD environment variable"; exit 1;}
+    [ -z "${EXO_DB_PASSWORD}" ] && EXO_DB_PASSWORD="exo"
     [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="db"
     [ -z "${EXO_DB_PORT}" ] && EXO_DB_PORT="3306"
     [ -z "${EXO_DB_MYSQL_USE_SSL}" ] && EXO_DB_MYSQL_USE_SSL="false"
@@ -92,7 +92,7 @@ case "${EXO_DB_TYPE}" in
   pgsql|postgres|postgresql)
     [ -z "${EXO_DB_NAME}" ] && EXO_DB_NAME="exo"
     [ -z "${EXO_DB_USER}" ] && EXO_DB_USER="exo"
-    [ -z "${EXO_DB_PASSWORD}" ] && { echo "ERROR: you must provide a database password with EXO_DB_PASSWORD environment variable"; exit 1;}
+    [ -z "${EXO_DB_PASSWORD}" ] && EXO_DB_PASSWORD="exo"
     [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="db"
     [ -z "${EXO_DB_PORT}" ] && EXO_DB_PORT="5432"
     ;;
