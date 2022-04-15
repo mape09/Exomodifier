@@ -35,11 +35,11 @@ services:
       - "10001:10001"
       - "10002:10002"
     links:
-      - db
+      - exo
       - mongo
       - search
     depends_on:
-      - db
+      - exo
       - mongo
       - search
       - mail
