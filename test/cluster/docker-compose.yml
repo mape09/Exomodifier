@@ -50,7 +50,7 @@ services:
       EXO_DB_NAME: exo
       EXO_DB_USER: exo
       EXO_DB_PASSWORD: exo
-      EXO_DB_HOST: exo-db
+      EXO_DB_HOST: exo
       # Store files in RDBMS to simplify cluster setup
       EXO_FILE_STORAGE_TYPE: "rdbms"
       EXO_JCR_DB_STORAGE_ENABLED: "false"
@@ -115,7 +115,7 @@ services:
       EXO_DB_NAME: exo
       EXO_DB_USER: exo
       EXO_DB_PASSWORD: exo
-      EXO_DB_HOST: exo-db
+      EXO_DB_HOST: exo
       # Store files in RDBMS to simplify cluster setup
       EXO_FILE_STORAGE_TYPE: "rdbms"
       EXO_JCR_DB_STORAGE_ENABLED: "false"
