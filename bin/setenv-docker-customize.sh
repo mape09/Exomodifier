@@ -85,15 +85,15 @@ case "${EXO_DB_TYPE}" in
     [ -z "${EXO_DB_NAME}" ] && EXO_DB_NAME="exo"
     [ -z "${EXO_DB_USER}" ] && EXO_DB_USER="exo"
     [ -z "${EXO_DB_PASSWORD}" ] && EXO_DB_PASSWORD="exo"
-    [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="db"
+    [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="exo"
     [ -z "${EXO_DB_PORT}" ] && EXO_DB_PORT="3306"
-    [ -z "${EXO_DB_MYSQL_USE_SSL}" ] && EXO_DB_MYSQL_USE_SSL="false"
+    [ -z "${EXO_DB_MYSQL_USE_SSL}" ] && EXO_DB_MYSQL_USE_SSL="true"
     ;;
   pgsql|postgres|postgresql)
     [ -z "${EXO_DB_NAME}" ] && EXO_DB_NAME="exo"
     [ -z "${EXO_DB_USER}" ] && EXO_DB_USER="exo"
     [ -z "${EXO_DB_PASSWORD}" ] && EXO_DB_PASSWORD="exo"
-    [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="db"
+    [ -z "${EXO_DB_HOST}" ] && EXO_DB_HOST="exo"
     [ -z "${EXO_DB_PORT}" ] && EXO_DB_PORT="5432"
     ;;
   *)
