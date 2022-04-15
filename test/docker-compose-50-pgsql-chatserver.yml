@@ -41,11 +41,11 @@ services:
       - "10001:10001"
       - "10002:10002"
     links:
-      - db
+      - exo
       - search
       - chatserver
     depends_on:
-      - db
+      - exo
       - search
       - mail
       - chatserver
