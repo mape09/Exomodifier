@@ -798,7 +798,7 @@ case "${EXO_DB_TYPE}" in
     wait-for ${EXO_DB_HOST}:${EXO_DB_PORT} -s -t ${EXO_DB_TIMEOUT}
     if [ $? != 0 ]; then
       echo "[ERROR] The ${EXO_DB_TYPE} database ${EXO_DB_HOST}:${EXO_DB_PORT} was not available within ${EXO_DB_TIMEOUT}s ! eXo startup aborted ..."
-      exit 1
+      #exit 1
     else
       echo "Database ${EXO_DB_TYPE} is available, continue starting..."
     fi
