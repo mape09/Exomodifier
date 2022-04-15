@@ -27,9 +27,11 @@ services:
       - "10002:10002"
     links:
       - db
+      - exo
       - mongo
     depends_on:
       - db
+      - exo
       - mongo
   mongo:
     extends:
