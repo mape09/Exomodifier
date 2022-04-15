@@ -44,11 +44,11 @@ services:
       - exo_shared:/srv/exo/shared
       - exo1_data:/srv/exo
     links:
-      - db
+      - exo
       - mongo
       - search
     depends_on:
-      - db
+      - exo
       - mongo
       - search
       - mail
@@ -86,11 +86,11 @@ services:
       - exo_shared:/srv/exo/shared
       - exo2_data:/srv/exo
     links:
-      - db
+      - exo
       - mongo
       - search
     depends_on:
-      - db
+      - exo
       - mongo
       - search
       - mail
